@@ -1,0 +1,24 @@
+{
+  "name": "ld-project-2",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/dotADmit/layout-designer-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/dotADmit/layout-designer-project-lvl2/actions)",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotADmit/layout-designer-project-lvl2.git"
+  },
+  "author": "dotADmit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dotADmit/layout-designer-project-lvl2/issues"
+  },
+  "homepage": "https://github.com/dotADmit/layout-designer-project-lvl2#readme",
+  "devDependencies": {
+    "htmlhint": "^0.15.2",
+    "sass": "^1.43.2",
+    "stylelint-config-standard": "^22.0.0"
+  }
+}
