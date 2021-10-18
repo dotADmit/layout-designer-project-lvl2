@@ -34,18 +34,25 @@ body {
   background: #3c3b3d;
 }
 
-h1 {
-  font-size: 60px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: #fff;
   line-height: 1.5;
   font-weight: bold;
   text-transform: capitalize;
 }
 
+h1 {
+  font-size: 60px;
+}
+
 h2 {
   font-size: 38px;
-  line-height: 1.5;
-  font-weight: bold;
-  text-transform: capitalize;
 }
 
 @media (max-width: 414px) {
@@ -58,13 +65,95 @@ h2 {
   }
 }
 .gen-wrapper {
+  position: relative;
   min-height: 100%;
   overflow: hidden;
 }
 
-.content-container {
-  max-width: 1200px;
-  margin: 0 auto;
+@media (min-width: 1240px) {
+  .content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+.m-0 {
+  margin: 0;
+}
+
+.header {
+  position: relative;
+}
+
+.header-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  font-size: 11px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+}
+
+.logo-img {
+  width: 24px;
+  height: 24px;
+}
+
+.nav {
+  margin: 0 auto 0 90px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-link {
+  color: #cacaca;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: #fff;
+}
+
+.header-search {
+  width: 248px;
+  height: 25px;
+  padding: 5px 0 5px 10px;
+  background: #3c3b3d;
+  border-radius: 50px;
+}
+
+.page-description {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.page-description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0;
+  color: #fff;
+}
+
+.page-description-text {
+  margin: 31px 0 17px 0;
+}
+
+.page-description-form {
+  max-width: 570px;
 }
 
 /*# sourceMappingURL=style.css.map */

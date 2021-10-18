@@ -1,0 +1,35 @@
+.page-description {
+  background-image: url('../images/banner.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.page-description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 200px 0;
+
+  color: #fff;
+}
+
+// .page-description-title {
+// }
+
+// .page-description-subtitle {
+// }
+
+.page-description-text {
+  margin: 31px 0 17px 0;
+}
+
+.page-description-form {
+  max-width: 570px;
+}
+
+// .form-name {
+// }
+
+// .form-email {
+// }
