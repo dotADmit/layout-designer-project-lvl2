@@ -8,17 +8,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
   padding: 200px 0;
 
   color: #fff;
 }
-
-// .page-description-title {
-// }
-
-// .page-description-subtitle {
-// }
 
 .page-description-text {
   margin: 31px 0 17px 0;
@@ -26,10 +21,52 @@
 
 .page-description-form {
   max-width: 570px;
+  width: 100%;
 }
 
-// .form-name {
-// }
+.form-group-input {
+  display: flex;
+  gap: 24px;
+  margin: 0 auto;
+}
 
-// .form-email {
-// }
+.form-input {
+  display: block;
+  min-width: 270px;
+  min-height: 50px;
+  margin-bottom: 1.5rem;
+  padding-left: 20px;
+  flex-grow: 1;
+
+  color: #fff;
+  border: 2px solid $dark-grey;
+  border-radius: 3px;
+
+  background: none;
+}
+
+.form-input::placeholder {
+  color: #fff;
+}
+
+.form-submit {
+  width: 100%;
+
+  color: #fff;
+  background: $green;
+}
+
+@media (max-width: 605px) {
+  .page-description-container {
+    padding: 250px 0 201px 0;
+  }
+
+  .page-description-text {
+    font-size: 16px;
+  }
+
+  .form-group-input {
+    flex-direction: column;
+    gap: 0;
+  }
+}
