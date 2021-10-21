@@ -43,16 +43,22 @@ h6 {
   margin: 0;
   color: #fff;
   line-height: 1.5;
-  font-weight: bold;
   text-transform: uppercase;
 }
 
 h1 {
   font-size: 60px;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 38px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: normal;
 }
 
 @media (max-width: 1000px) {
@@ -95,8 +101,15 @@ h2 {
 }
 
 .btn {
+  display: block;
   padding: 20px 30px;
+  font-size: 16px;
+  text-transform: uppercase;
   border-radius: 5px;
+}
+
+.bg-black {
+  background-color: #08020d;
 }
 
 .header {
@@ -246,6 +259,66 @@ h2 {
     flex-direction: column;
     gap: 0;
   }
+}
+.page-pricing-container {
+  padding-top: 100px;
+  color: #fff;
+  text-align: center;
+}
+
+.pricing-body {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 43px 0;
+}
+
+.pricing-item {
+  flex: 0 0 30.75%;
+  padding: 24px 1.5rem 0 1.5rem;
+  border-radius: 1rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.pricing-item:nth-child(1) {
+  background-image: url("../images/subscribe_1.png");
+}
+
+.pricing-item:nth-child(2) {
+  background-image: url("../images/subscribe_2.png");
+}
+
+.pricing-item:nth-child(3) {
+  background-image: url("../images/subscribe_3.png");
+}
+
+.pricing-item-value {
+  margin: 200px 0 40px 0;
+  font-size: 64px;
+  line-height: 1em;
+}
+
+.pricing-currency {
+  padding-left: 15px;
+  vertical-align: top;
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+.pricing-btn-submit {
+  width: 100%;
+  color: #fff;
+  border: 1px solid #fff;
+  text-decoration: none;
+}
+
+.pricing-item-footer {
+  margin: 64px 0;
+  font-size: 12.8px;
+}
+
+.pricing-footer {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
