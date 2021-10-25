@@ -1,0 +1,51 @@
+.page-app-container {
+  padding: 100px 0;
+}
+
+.app-title {
+  text-align: center;
+}
+
+.app-body {
+  display: flex;
+  padding-top: 48px;
+  gap: 16px;
+}
+
+.app-text {
+  max-width: 600px;
+  width: 100%;
+
+  font-size: 16px;
+}
+
+.btn-download {
+  padding: 16px 40px;
+
+  font-size: 12.8px;
+  color: #fff;
+  text-transform: none;
+
+  background-color: $red;
+  border-radius: 32px;
+}
+
+.app-img {
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .app-body {
+    flex-direction: column-reverse;
+  }
+
+  .app-text {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  .app-img {
+    width: 100%;
+  }
+}
