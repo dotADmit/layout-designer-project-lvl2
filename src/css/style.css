@@ -515,6 +515,43 @@ nav .active {
     width: 100%;
   }
 }
+.popular-track-container {
+  padding: 100px 0 0 0;
+}
+
+.popular-track-body {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 25px;
+  padding: 48px 0 0 0;
+}
+
+.track {
+  display: flex;
+  width: 47%;
+  align-items: center;
+  color: #e0e0e0;
+  font-size: 12.8px;
+}
+@media (max-width: 875px) {
+  .track {
+    width: 100%;
+  }
+}
+.track-img {
+  width: 55px;
+  height: 55px;
+  margin: 0 15px 0 0;
+}
+.track-info {
+  flex-grow: 1;
+}
+.track-name {
+  font-size: inherit;
+  font-weight: bold;
+}
+
 .footer-top {
   display: flex;
   flex-wrap: wrap;
