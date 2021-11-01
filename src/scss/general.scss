@@ -107,6 +107,7 @@ ul {
 }
 
 .btn {
+  position: relative;
   display: block;
 
   padding: 20px 30px;
@@ -125,4 +126,8 @@ ul {
 
 .bg-gradient {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+nav .active {
+  color: #fff;
 }

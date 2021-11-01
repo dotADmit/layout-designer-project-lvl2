@@ -1,0 +1,58 @@
+.description-artist {
+  &-bg {
+    background-image: url('../images/Morten Harket.png');
+  }
+
+  &-container {
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  &-text {
+    margin: 16px 0 48px 0;
+  }
+}
+
+.btn {
+  &-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    font-size: 12.8px;
+  }
+
+  &-hero {
+    position: relative;
+    width: 200px;
+
+    font-size: inherit;
+    padding-left: 67px;
+    text-align: left;
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: 31px;
+      width: 20px;
+      height: 20px;
+      filter: invert(100%)
+    }
+  }
+
+  &-mix {
+    background-color: $purple;
+
+    &::before {
+      background: url('../images/heart.svg') no-repeat;
+    }
+  }
+
+  &-favorites {
+    background-color: $red;
+
+    &::before {
+    background: url('../images/play-button.svg') no-repeat;
+    }
+  }
+}

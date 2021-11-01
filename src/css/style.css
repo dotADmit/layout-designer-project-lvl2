@@ -112,6 +112,7 @@ ul {
 }
 
 .btn {
+  position: relative;
   display: block;
   padding: 20px 30px;
   font-size: 16px;
@@ -126,6 +127,10 @@ ul {
 
 .bg-gradient {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+nav .active {
+  color: #fff;
 }
 
 .header {
@@ -201,25 +206,32 @@ ul {
   }
 }
 .page-description {
-  background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
 }
-
 .page-description-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   padding: 200px 0;
   color: #fff;
 }
-
-.page-description-text {
-  margin: 31px 0 17px 0;
+@media (max-width: 605px) {
+  .page-description-container {
+    padding: 250px 0 201px 0;
+  }
 }
 
-.page-description-form {
+.description-main-bg {
+  background-image: url("../images/banner.png");
+}
+.description-main-container {
+  align-items: center;
+  text-align: center;
+}
+.description-main-text {
+  margin: 31px 0 17px 0;
+}
+.description-main-form {
   max-width: 570px;
   width: 100%;
 }
@@ -254,11 +266,7 @@ ul {
 }
 
 @media (max-width: 605px) {
-  .page-description-container {
-    padding: 250px 0 201px 0;
-  }
-
-  .page-description-text {
+  .description-main-text {
     font-size: 16px;
   }
 
@@ -267,6 +275,51 @@ ul {
     gap: 0;
   }
 }
+.description-artist-bg {
+  background-image: url("../images/Morten Harket.png");
+}
+.description-artist-container {
+  align-items: flex-start;
+  text-align: center;
+}
+.description-artist-text {
+  margin: 16px 0 48px 0;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  font-size: 12.8px;
+}
+.btn-hero {
+  position: relative;
+  width: 200px;
+  font-size: inherit;
+  padding-left: 67px;
+  text-align: left;
+}
+.btn-hero::before {
+  position: absolute;
+  content: "";
+  left: 31px;
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+.btn-mix {
+  background-color: #5328a1;
+}
+.btn-mix::before {
+  background: url("../images/heart.svg") no-repeat;
+}
+.btn-favorites {
+  background-color: #95390c;
+}
+.btn-favorites::before {
+  background: url("../images/play-button.svg") no-repeat;
+}
+
 .page-pricing-container {
   padding-top: 100px;
   color: #fff;

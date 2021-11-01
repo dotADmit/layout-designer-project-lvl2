@@ -3,6 +3,7 @@
     "stylelint-config-standard",
   ],
   "rules": {
+    "function-calc-no-invalid": null,
     "declaration-empty-line-before": null,
   }
 }
